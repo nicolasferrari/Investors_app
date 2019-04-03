@@ -6,7 +6,7 @@ import datetime
 import time
 
 
-app = Flask(__name__,template_folder='Templates')
+app = Flask(__name__,template_folder='templates')
 
 first_date = datetime.datetime(2019,1,7)
 current_date = datetime.datetime.now()#.strftime('%Y-%m-%d')
