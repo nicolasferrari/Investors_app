@@ -6,7 +6,9 @@ import datetime
 import time
 
 
-app = Flask(__name__,template_folder='Templates',static_folder="static")
+app = Flask(__name__,template_folder='Templates')
+
+app._static_folder = os.path.abspath("static/style.css")
 
 first_date = datetime.datetime(2019,1,7)
 current_date = datetime.datetime.now()#.strftime('%Y-%m-%d')
